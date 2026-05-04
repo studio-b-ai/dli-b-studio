@@ -60,6 +60,13 @@
     .subscribe-headline { font-family: 'Fraunces', serif; font-weight: 900; font-style: italic; font-size: clamp(1.6rem, 3vw, 2.25rem); line-height: 1.05; letter-spacing: -0.02em; color: var(--ink); margin-bottom: 1rem; }
     .subscribe-body { font-size: 0.92rem; line-height: 1.65; color: rgba(13,13,13,0.7); margin-bottom: 1.5rem; }
 
+    .why { padding: 4rem; background: var(--forest); color: var(--paper); }
+    .why-inner { max-width: 760px; }
+    .why-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 0.5rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(244,241,235,0.5); margin-bottom: 1.25rem; }
+    .why h2 { font-family: 'Fraunces', serif; font-weight: 900; font-style: italic; font-size: clamp(1.8rem, 3.5vw, 2.6rem); line-height: 1.05; letter-spacing: -0.02em; color: var(--paper); margin-bottom: 1.5rem; }
+    .why p { font-size: 1rem; line-height: 1.7; color: rgba(244,241,235,0.8); margin-bottom: 1rem; }
+    .why p:last-child { margin-bottom: 0; }
+    .why em { font-style: italic; color: var(--yolk); }
     .archive { padding: 4rem; }
     .section-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 0.5rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(26,51,40,0.4); margin-bottom: 2rem; }
     .archive-empty { font-family: 'Fraunces', serif; font-style: italic; font-size: 1.4rem; color: rgba(13,13,13,0.7); margin-bottom: 1rem; }
@@ -87,7 +94,8 @@
 <nav class="nav">
   <a href="/" class="bmark">b<span class="dot">.</span></a>
   <div class="nav-right">
-    <a href="https://capital.b.studio" class="nav-link">← Capital</a>
+    <a href="https://b.studio" class="nav-link">← b<span class="brand-dot">.</span>studio</a>
+    <a href="#why" class="nav-link">Why</a>
     <a href="#archive" class="nav-link">Archive</a>
     <a href="#subscribe" class="nav-link">Subscribe →</a>
   </div>
@@ -111,9 +119,19 @@
 </div>
 
 <section class="hero">
-  <p class="firm-label">DLI — the newsletter of <a href="https://capital.b.studio">Capital, by Studio <span class="brand-b">b<span class="brand-dot">.</span></span></a></p>
+  <p class="firm-label">DLI, by Studio <span class="brand-b">b<span class="brand-dot">.</span></span> · The Direct Lending Index</p>
   <h1>The only open index for LMM <em>direct lending.</em></h1>
   <p class="hero-body">Quarterly spread, structure, and recovery data across the global lower middle market. Market event commentary as it happens. We publish it because the benchmarks didn't exist — and LPs deserve to see the data before they commit capital.</p>
+</section>
+
+<section class="why" id="why">
+  <div class="why-inner">
+    <p class="why-eyebrow">Why we built this</p>
+    <h2>The benchmarks didn't exist.</h2>
+    <p>Lower middle market direct lending is the largest under-benchmarked corner of private credit. The big indices track upper-middle and broadly syndicated. The data sources LPs use to underwrite LMM allocators are surveys, self-reports, and selective marks — every layer between the deal and the LP filters out the inconvenient.</p>
+    <p>So we built the index we wished existed: <em>quarterly spread, structure, and recovery data</em> from observed LMM transactions. Methodology is open. Universe is documented. Nothing is paid-promoted.</p>
+    <p>Read the data free. Subscribers get the methodology, the universe construction notes, and market-event commentary as it happens. Accredited LPs interested in participating in our fund can request the deck.</p>
+  </div>
 </section>
 
 <section class="subscribe" id="subscribe">
@@ -141,15 +159,15 @@
     <a href="https://benchmarks.b.studio">Benchmarks</a>
   </div>
   <div class="footer-col">
-    <h4>The firm</h4>
-    <a href="https://consulting.b.studio">Consulting, by Studio <span class="brand-b">b<span class="brand-dot">.</span></span></a>
-    <a href="https://capital.b.studio">Capital, by Studio <span class="brand-b">b<span class="brand-dot">.</span></span></a>
-    <a href="https://build.b.studio">Build, by Studio <span class="brand-b">b<span class="brand-dot">.</span></span></a>
+    <h4>Other newsletters</h4>
+    <a href="https://dispatch.b.studio">Dispatch, by Studio <span class="brand-b">b<span class="brand-dot">.</span></span></a>
+    <a href="https://markdown.b.studio">Markdown, by Studio <span class="brand-b">b<span class="brand-dot">.</span></span></a>
   </div>
   <div class="footer-col">
-    <h4>Hub</h4>
+    <h4>Studio <span class="brand-b">b<span class="brand-dot">.</span></span></h4>
     <a href="https://b.studio">b<span class="brand-dot">.</span>studio</a>
     <a href="mailto:invest@b.studio">invest@b<span class="brand-dot">.</span>studio</a>
+    <a href="mailto:hello@b.studio">hello@b<span class="brand-dot">.</span>studio</a>
   </div>
 </footer>
 
