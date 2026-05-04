@@ -153,15 +153,27 @@
     }
 
     .brand-b { text-transform: none; }
+    .brand-dot { color: var(--vermillion); }
+
+    .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 10; padding: 1.25rem 2.5rem; display: flex; justify-content: space-between; align-items: center; background: rgba(244,241,235,0.85); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-bottom: 1px solid rgba(26,51,40,0.08); }
+    .bmark { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 1.4rem; color: var(--forest); text-decoration: none; letter-spacing: -0.04em; line-height: 1; }
+    .bmark .dot { color: var(--vermillion); }
+    .nav-link { font-family: 'JetBrains Mono', monospace; font-size: 0.5rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(26,51,40,0.5); text-decoration: none; transition: color 0.12s; }
+    .nav-link:hover { color: var(--forest); }
 
     @media (max-width: 640px) {
+      .nav { padding: 1rem 1.25rem; }
       .card { padding: 40px 28px 36px; }
     }
   </style>
 </head>
 <body>
+  <nav class="nav">
+    <a href="/" class="bmark">b<span class="dot">.</span></a>
+    <a href="https://capital.b.studio" class="nav-link">← Capital, by Studio <span class="brand-b">b<span class="brand-dot">.</span></span></a>
+  </nav>
   <div class="card">
-    <div class="kicker">DLI, by Studio <span class="brand-b">b.</span></div>
+    <div class="kicker">DLI — the newsletter of Capital, by Studio <span class="brand-b">b<span class="brand-dot">.</span></span></div>
     <h1 class="headline">The only open index for LMM direct lending.</h1>
     <p class="body-text">
       Quarterly spread, structure, and recovery data across the global lower middle market. Market event commentary as it happens. We publish it because the benchmarks didn't exist — and LPs deserve to see the data before they commit capital.
@@ -173,7 +185,7 @@
     </div>
     <div class="form-note">No spam. Unsubscribe any time.</div>
     <div class="divider"></div>
-    <div class="footer-note">Published by Kevin Bibelhausen · Studio <span class="brand-b">b.</span></div>
+    <div class="footer-note">Published by Kevin Bibelhausen · Studio <span class="brand-b">b<span class="brand-dot">.</span></span></div>
   </div>
 </body>
 </html>
